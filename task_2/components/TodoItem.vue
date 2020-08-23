@@ -54,7 +54,7 @@ export default {
 }
 .todo-item-btns {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 30%;
 }

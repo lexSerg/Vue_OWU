@@ -60,6 +60,9 @@ export default {
 };
 </script>
 <style scoped>
+button {
+  min-width: 10rem;
+}
 .todo-form {
   width: 30vw;
   margin: 0 auto;
