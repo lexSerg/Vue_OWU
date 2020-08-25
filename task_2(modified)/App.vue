@@ -17,12 +17,14 @@ export default {
   data() {
     return {
       todoArr: [],
+      currentItem : null
     };
   },
   methods: {
     createItem(event) {
       console.log(event);
-      this.todoArr.push(event);
+      this.currentItem = Object.assign({}, event)
+      this.todoArr.push(this.currentItem);
     },
     removeItem(event) {
       this.todoArr.splice(event, 1);

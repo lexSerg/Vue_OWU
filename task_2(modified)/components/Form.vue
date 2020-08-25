@@ -93,7 +93,7 @@
         Add New Item
       </button>
 
-      <button type="submit" v-else @click="saveItem" class="btn btn-primary">
+      <button type="submit" v-else @click.prevent="saveItem" class="btn btn-primary">
         Save Item
       </button>
     </form>

@@ -55,10 +55,9 @@ export default {
         this.item = {};
       }
     },
-    saveItem() {
-      console.log(this.currentIndex);
-      this.todoArr.splice(this.currentIndex, 1, this.item);
-      this.item = {};
+    saveItem(event) {
+      let currentItem = Object.assign({},event)
+      this.todoArr.splice(this.currentIndex, 1, currentItem);
       this.isNewItem = true;
     },
   },
